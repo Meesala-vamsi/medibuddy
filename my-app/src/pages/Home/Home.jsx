@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchData } from "../../store/slices";
 import Carousel from "../../components/carousel";
-import FeaturedHealth from "../../components/featuredHealth";
+// import FeaturedHealth from "../../components/featuredHealth";
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -38,7 +38,7 @@ const Home = () => {
                 </div>
               ))}
             {eachItem?.id == 2 && <Carousel bannerData={eachItem} />}
-            {eachItem?.id == 3 && <FeaturedHealth categories={eachItem.categories["10386"]} />}
+            {/* {eachItem?.id == 3 && <FeaturedHealth categories={eachItem.categories["10386"]} />} */}
           </div>
         ))}
     </div>
